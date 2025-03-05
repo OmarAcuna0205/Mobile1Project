@@ -37,6 +37,12 @@ fun Content(modifier: Modifier = Modifier) {
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
+        // Texto adicional con los nombres antes de los TextField
+        Text(
+            text = "Hola, somos Ian Corral y Omar Acuña",
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+
         TextField(
             value = text1,
             onValueChange = { text1 = it },
