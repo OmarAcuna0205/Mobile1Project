@@ -67,26 +67,25 @@ fun LoginView() {
         OutlinedTextField(
             value = email,
             onValueChange = { email = it },
-            label = { Text("email") },
+            label = { Text(stringResource(id = R.string.email_label)) },
             keyboardOptions = KeyboardOptions.Default.copy(
                 keyboardType = KeyboardType.Email
             ),
             modifier = Modifier.fillMaxWidth()
         )
 
-        Spacer(modifier = Modifier.height(8.dp))
-
         // Campo de contraseña
         OutlinedTextField(
             value = password,
             onValueChange = { password = it },
-            label = { Text("password") },
+            label = { Text(stringResource(id = R.string.password_label)) },
             keyboardOptions = KeyboardOptions.Default.copy(
                 keyboardType = KeyboardType.Password
             ),
             visualTransformation = if (passwordVisible) VisualTransformation.None else PasswordVisualTransformation(),
             trailingIcon = {
-                val icon = if (passwordVisible) Icons.Default.Visibility else Icons.Default.VisibilityOff
+                val icon =
+                    if (passwordVisible) Icons.Default.Visibility else Icons.Default.VisibilityOff
                 IconButton(onClick = { passwordVisible = !passwordVisible }) {
                     Icon(imageVector = icon, contentDescription = "Toggle Password Visibility")
                 }
@@ -94,14 +93,12 @@ fun LoginView() {
             modifier = Modifier.fillMaxWidth()
         )
 
-        Spacer(modifier = Modifier.height(16.dp))
-
         // Botón de inicio de sesión
         Button(
             onClick = { /* Lógica de autenticación */ },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text("Botón")
+            Text(stringResource(id = R.string.login_button))
         }
     }
 }
