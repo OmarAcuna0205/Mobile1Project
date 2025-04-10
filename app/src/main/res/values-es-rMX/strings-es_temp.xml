@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="image_descript">Termómetro (kg)</string>
+    <string name="celsius_label">Celsius (°C)</string>
+    <string name="convert_button">Convertir</string>
+    <string name="fahrenheit_result">Fahrenheit: %.1f °F</string>
+    <string name="error_invalid_input_temp">Por favor, introduce un número válido</string>
+</resources>
+
