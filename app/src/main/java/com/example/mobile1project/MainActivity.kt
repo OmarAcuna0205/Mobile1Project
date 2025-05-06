@@ -6,20 +6,17 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.ui.Modifier
-import com.example.mobile1project.temps.views.TempScreen
-
+import com.example.mobile1project.navigation.TabBarNavigationView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme {
-                Surface(modifier = Modifier.fillMaxSize()) {
-                    TempScreen()
+                Surface(modifier = androidx.compose.ui.Modifier.fillMaxSize()) {
+                    TabBarNavigationView()
                 }
             }
         }
     }
 }
-

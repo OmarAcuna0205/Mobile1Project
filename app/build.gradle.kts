@@ -56,6 +56,8 @@ dependencies {
 
     // BOM (Bill of Materials)
     implementation(platform("androidx.compose:compose-bom:2023.06.00"))
+    implementation(libs.androidx.navigation.runtime.android)
+    implementation(libs.androidx.navigation.compose)
 
     // Testing
     testImplementation("junit:junit:4.13.2")
