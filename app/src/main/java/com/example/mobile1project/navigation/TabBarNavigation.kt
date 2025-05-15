@@ -11,6 +11,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.mobile1project.ids.IdsView
 import com.example.mobile1project.ids.imc.views.IMCScreen
 import com.example.mobile1project.firstpartial.FirstPartialView
+import com.example.mobile1project.ids.location.views.LocationListScreen
 import com.example.mobile1project.ids.students.views.StudentListScreen
 import com.example.mobile1project.ids.sum.views.SumScreen
 import com.example.mobile1project.ids.temps.views.TempScreen
@@ -64,7 +65,8 @@ fun TabBarNavigationView(navController: NavHostController = rememberNavControlle
             composable(ScreenNavigation.Imc.route) { IMCScreen() }
             composable(ScreenNavigation.Sum.route) { SumScreen() }
             composable(ScreenNavigation.Temp.route) { TempScreen() }
-            composable(ScreenNavigation.Students.route) { StudentListScreen() }
+            composable(ScreenNavigation.Students.route) { StudentListScreen()}
+            composable(ScreenNavigation.Locations.route) {LocationListScreen()}
         }
     }
 }
