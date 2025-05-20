@@ -32,7 +32,7 @@ fun LocationListScreen(viewModel: LocationViewModel = viewModel()) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Locations List") }
+                title = { Text(text = "Lista de Ubicaciones") }
             )
         }
     ) { paddingValues ->

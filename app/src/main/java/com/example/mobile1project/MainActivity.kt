@@ -6,7 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import com.example.mobile1project.ids.itit.views.ItitListScreen
 import com.example.mobile1project.ids.location.views.LocationListScreen
+import com.example.mobile1project.ids.students.views.StudentListScreen
 import com.example.mobile1project.navigation.TabBarNavigationView
 
 class MainActivity : ComponentActivity() {

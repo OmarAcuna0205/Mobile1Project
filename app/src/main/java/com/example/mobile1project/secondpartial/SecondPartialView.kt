@@ -39,7 +39,7 @@ fun SecondPartialView(navController: NavController) {
                 .height(50.dp),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF5722))
         ) {
-            Text("SUM", style = MaterialTheme.typography.bodyLarge)
+            Text("CALCULAR SUMA", style = MaterialTheme.typography.bodyLarge)
         }
 
         Button(
@@ -49,7 +49,7 @@ fun SecondPartialView(navController: NavController) {
                 .height(50.dp),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF5722))
         ) {
-            Text("IMC", style = MaterialTheme.typography.bodyLarge)
+            Text("CALCULAR IMC", style = MaterialTheme.typography.bodyLarge)
         }
 
         Button(
@@ -59,7 +59,7 @@ fun SecondPartialView(navController: NavController) {
                 .height(50.dp),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF5722))
         ) {
-            Text("TEMP", style = MaterialTheme.typography.bodyLarge)
+            Text("CALCULAR TEMPERATURA", style = MaterialTheme.typography.bodyLarge)
         }
     }
 }

@@ -28,9 +28,8 @@ fun ThirdPartialView(navController: NavController) {
             textAlign = TextAlign.Center
         )
 
-        Spacer(modifier = Modifier.height(16.dp)) // Espacio entre el texto y los botones
+        Spacer(modifier = Modifier.height(16.dp))
 
-        // Botón para navegar a Lista de Estudiantes
         Button(
             onClick = { navController.navigate(ScreenNavigation.Students.route) },
             modifier = Modifier
@@ -38,10 +37,9 @@ fun ThirdPartialView(navController: NavController) {
                 .height(50.dp),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF81C784))
         ) {
-            Text("ESTUDIANTES", style = MaterialTheme.typography.bodyLarge)
+            Text("MOSTRAR ESTUDIANTES", style = MaterialTheme.typography.bodyLarge)
         }
 
-        // Botón para navegar a Locations
         Button(
             onClick = { navController.navigate(ScreenNavigation.Locations.route) },
             modifier = Modifier
@@ -49,7 +47,16 @@ fun ThirdPartialView(navController: NavController) {
                 .height(50.dp),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF81C784))
         ) {
-            Text("LOCATIONS", style = MaterialTheme.typography.bodyLarge)
+            Text("MOSTRAR UBICACIONES", style = MaterialTheme.typography.bodyLarge)
+        }
+        Button(
+            onClick = { navController.navigate(ScreenNavigation.Itits.route) },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(50.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF81C784))
+        ) {
+            Text("MOSTRAR ITITS", style = MaterialTheme.typography.bodyLarge)
         }
     }
 }
