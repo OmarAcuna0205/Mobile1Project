@@ -9,6 +9,8 @@ sealed class ScreenNavigation(val route: String, val label: String, val icon: Im
     object FirstPartial : ScreenNavigation("FirstPartialRoute", "Parcial 1", Icons.Default.FindInPage)
     object SecondPartial : ScreenNavigation("SecondPartialRoute", "Parcial 2", Icons.Default.FindInPage)
     object ThirdPartial : ScreenNavigation("ThirdPartialRoute", "Parcial 3", Icons.Default.FindInPage)
+    object Final : ScreenNavigation("FinalRoute", "Final", Icons.Default.FindInPage)
+
 
     object Imc : ScreenNavigation("ImcRoute", "IMC", Icons.Default.Add)
     object Sum : ScreenNavigation("SumRoute", "Suma", Icons.Default.Add)
@@ -16,6 +18,6 @@ sealed class ScreenNavigation(val route: String, val label: String, val icon: Im
     object Students : ScreenNavigation("StudentListRoute", "Lista Estudiantes", Icons.Default.Add)
     object Locations : ScreenNavigation("LocationListRoute", "Lista Locations", Icons.Default.Place)
     object Itits : ScreenNavigation("ItitsListRoute", "Lista Itits", Icons.Default.Place)
-
+    object Restaurants : ScreenNavigation("RestaurantsListRoute", "Lista Restaurantes", Icons.Default.Place)
 }
 

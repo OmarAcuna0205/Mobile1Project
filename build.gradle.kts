@@ -71,4 +71,6 @@ dependencies {
 
     // Coroutines si usas funciones suspend
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+
+    implementation ("com.google.accompanist:accompanist-swiperefresh:0.33.2-alpha")
 }
